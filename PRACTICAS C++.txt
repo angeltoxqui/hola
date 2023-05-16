@@ -1,0 +1,161 @@
+1)
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  int aux = 4 * 5;
+  cout << "dos veces " << aux << " es: " << 2 * aux << "\n";
+  cout << "tres veces " << aux << " es:" << 3 * aux << "\n";
+}
+
+
+
+2)
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  float numero;
+  cout << "introduzca un numero positivo  ";
+  cin >> numero;
+  if (numero>0)
+    cout << numero << " es mayor a cero" << endl;
+}
+
+
+4)
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+cout << "introduzca un numero";
+  int valor;
+  cin>> valor;
+  if (valor<0)
+    valor=-valor;
+  cout<< valor<< " es positivo" << endl;
+}
+
+5)
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int n, d;
+  cout<< "introduzca dos enteros ";
+cin>>n>>d;
+
+  if(n%d==0)
+    cout<< n << "  es divisible por "<<d<<endl;
+  else 
+    cout<< n<< " no es divisible por  "<<d<<endl;
+
+}
+
+6
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int n;
+  cout<< "introduzca un numero ";
+cin>>n;
+
+  if(n%2==0)
+    cout<< n << "  es par "<<endl;
+  else 
+    cout<< n<< " no es par  "<<endl;
+}
+
+7
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int n;
+  float r;
+  cout<< "introduzca un numero ";
+cin>>n;
+  r=n%2
+  if(r==0)
+    cout<< n << " es par"<<"\n"<<" el residuo es " <<r<<endl;
+  else 
+
+  cout<< n<< " es impar " <<"\n"<<" el residuo es " <<r<<endl;
+}
+
+8
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int a, b, c, mayor;
+  float r;
+  cout<< "introduzca tres numeros enteros: ";
+cin >> a >> b >> c ;
+  
+  if(a>b)
+    if (a>c)
+      mayor = a;
+    else 
+      mayor = c; 
+  else 
+  if (b>c)
+      mayor = b;
+    else 
+      mayor = c;
+  
+  cout<< " el mayor es " <<mayor<<endl;
+}
+
+9
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+char car;
+cout << "escribe una letra" << endl;
+cin >> car;
+
+  if ((car== 'a') || (car == 'A'))
+  cout << car << " es una vocal" << endl;
+  else if ((car== 'e')|| (car=='E'))
+  cout << car << " es una vocal" << endl; 
+    else if ((car== 'i')|| (car=='I'))
+    cout << car << " es una vocal" << endl; 
+      else if ((car== 'o')|| (car=='O'))
+      cout << car << " es una vocal" << endl; 
+        else if ((car== 'u')|| (car=='U'))
+        cout << car << " es una vocal" << endl;  
+  else
+  cout << car << " no es una vocal" << endl;
+}
+
+10
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int opcion;
+cout<< "escriba un numero del 1 al 3 ";
+cin>>opcion; 
+
+  switch (opcion){
+    case 0:
+      cout<< "cero";
+      break;
+    case 1:
+      cout<< "uno";
+      break;
+    case 2:
+      cout<< "dos";
+      break;
+    case 3:
+      cout<< "tres";
+      break;
+    default:
+    cout<< "fuera de rango"<<endl;
+    
+  }
+}
